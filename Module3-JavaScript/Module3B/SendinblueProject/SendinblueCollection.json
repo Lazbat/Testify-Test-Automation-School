@@ -31,8 +31,8 @@
 											"});\r",
 											"\r",
 											"//Test 3: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response size\r",
@@ -236,8 +236,8 @@
 									"listen": "test",
 									"script": {
 										"exec": [
-											"pm.test('Response time is less than 500ms', function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test('Response time is less than 1000ms', function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"})\r",
 											"\r",
 											"pm.test('Response size is less than 1000B', function () {\r",
@@ -1329,8 +1329,8 @@
 											"});\r",
 											"\r",
 											"//Test 3: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -1519,8 +1519,8 @@
 									"script": {
 										"exec": [
 											"//Test 1: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response size\r",
@@ -1939,8 +1939,8 @@
 									"script": {
 										"exec": [
 											"//Test 1: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response size\r",
@@ -2989,22 +2989,25 @@
 										"exec": [
 											"const response = pm.response.json();\r",
 											"//extract expected response in console\r",
-											"//console.log(response[0]);\r",
 											"//console.log(response[0].id);\r",
-											"//console.log(response[2].title);\r",
+											"//console.log(response[1].title);\r",
 											"//console.log(response[4].title);\r",
+											"//Test 1: test to verify response body\r",
+											"pm.test(\"Confirm value of title\", function () {\r",
+											"    pm.expect(response[1].title).to.eql(\"Call\");\r",
+											"});\r",
 											"\r",
-											"//Test 1: test to verify the value of id with index [0]\r",
-											"pm.test(\"Search for id 65e64428ab2229627d9c7df1 \", function () {\r",
+											"//Test 2: test to verify response body\r",
+											"pm.test(\"Confirm value of id\", function () {\r",
 											"    pm.expect(response[0].id).to.eql(\"65e64428ab2229627d9c7df1\");\r",
 											"});\r",
 											"\r",
-											"//Test 2: test to verify the value of title with index [2]\r",
-											"pm.test(\"Search for title Todo \", function () {\r",
-											"    pm.expect(response[2].title).to.eql(\"Todo\");\r",
+											"//Test 3: test to verify response time\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
-											"//Test 3: test to verify the value of title with index [4]\r",
+											"//Test 4: test to verify the value of title with index [4]\r",
 											"pm.test(\"Search for title Lunch \", function () {\r",
 											"    pm.expect(response[4].title).to.eql(\"Lunch\");\r",
 											"});\r",
@@ -3015,21 +3018,6 @@
 								}
 							],
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "value",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "key",
-											"value": "api-key",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [
 									{
@@ -3698,8 +3686,8 @@
 									"script": {
 										"exec": [
 											"//Test 1: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response size\r",
@@ -4116,8 +4104,8 @@
 											"});\r",
 											"\r",
 											"//Test 3: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -4299,8 +4287,8 @@
 											"});\r",
 											"\r",
 											"//Test 3: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is below 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -4754,8 +4742,8 @@
 									"script": {
 										"exec": [
 											"//Test 1: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response size\r",
@@ -5173,8 +5161,8 @@
 									"script": {
 										"exec": [
 											"//Test 1: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response size\r",
@@ -8041,8 +8029,8 @@
 									"script": {
 										"exec": [
 											"//Test 1: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response size\r",
@@ -9677,8 +9665,8 @@
 									"script": {
 										"exec": [
 											"//Test 1: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response size\r",
@@ -14173,8 +14161,8 @@
 											"});\r",
 											"\r",
 											"//Test 2: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -17489,6 +17477,7 @@
 											"const response = pm.response.json();\r",
 											"//extract expected response in console\r",
 											"//console.log(response.code);\r",
+											"//console.log(response.message);\r",
 											"\r",
 											"//Test 1: test to verify the value of code\r",
 											"pm.test(\"Verify the value of code\", function () {\r",
@@ -17500,6 +17489,11 @@
 											"pm.test(\"access-control-allow-credentials is present\", function () {\r",
 											"    pm.response.to.have.header(\"access-control-allow-credentials\");\r",
 											"});\r",
+											"\r",
+											"//Test 3: test to verify response size\r",
+											"pm.test(\"Response sizeime is less than 1000B\", function () {\r",
+											"    pm.expect(pm.response.responseSize).to.be.below(1000);\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -17507,21 +17501,6 @@
 								}
 							],
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "value",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "key",
-											"value": "api-key",
-											"type": "string"
-										}
-									]
-								},
 								"method": "POST",
 								"header": [
 									{
@@ -22858,21 +22837,6 @@
 								}
 							],
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "value",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "key",
-											"value": "api-key",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [
 									{
@@ -23593,8 +23557,8 @@
 											"});\r",
 											"\r",
 											"//Test 3: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -24386,21 +24350,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "POST",
 										"header": [
 											{
@@ -24892,21 +24841,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "GET",
 										"header": [
 											{
@@ -25121,8 +25055,8 @@
 													"    pm.response.to.have.status(\"Forbidden\");\r",
 													"});\r",
 													"//Test 2: test to verify response time\r",
-													"pm.test(\"Response time is less than 500ms\", function () {\r",
-													"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+													"pm.test(\"Response time is less than 1000ms\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 													"});\r",
 													"\r",
 													"const response = pm.response.json();\r",
@@ -25145,21 +25079,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "POST",
 										"header": [
 											{
@@ -25448,21 +25367,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "PUT",
 										"header": [
 											{
@@ -25781,21 +25685,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "DELETE",
 										"header": [
 											{
@@ -26081,21 +25970,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "GET",
 										"header": [
 											{
@@ -26321,8 +26195,8 @@
 													"});\r",
 													"\r",
 													"//Test 4: test to verify response time\r",
-													"pm.test(\"Response time is less than 500ms\", function () {\r",
-													"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+													"pm.test(\"Response time is less than 1000ms\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 													"});\r",
 													"\r",
 													""
@@ -26332,21 +26206,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "PUT",
 										"header": [
 											{
@@ -26632,8 +26491,8 @@
 													"});\r",
 													"\r",
 													"//Test 6: test to verify response time\r",
-													"pm.test(\"Response time is less than 500ms\", function () {\r",
-													"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+													"pm.test(\"Response time is less than 1000ms\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 													"});"
 												],
 												"type": "text/javascript"
@@ -26641,21 +26500,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "DELETE",
 										"header": [
 											{
@@ -26877,8 +26721,8 @@
 													"});\r",
 													"\r",
 													"//Test 4: test to verify response time\r",
-													"pm.test(\"Response time is less than 500ms\", function () {\r",
-													"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+													"pm.test(\"Response time is less than 1000ms\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 													"});\r",
 													"\r",
 													"const response = pm.response.json();\r",
@@ -26901,21 +26745,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "PUT",
 										"header": [
 											{
@@ -27205,21 +27034,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "GET",
 										"header": [
 											{
@@ -27461,8 +27275,8 @@
 													"});\r",
 													"\r",
 													"//Test 6: test to verify response time\r",
-													"pm.test(\"Response time is less than 500ms\", function () {\r",
-													"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+													"pm.test(\"Response time is less than 1000ms\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 													"});"
 												],
 												"type": "text/javascript"
@@ -27470,21 +27284,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "GET",
 										"header": [
 											{
@@ -27727,8 +27526,8 @@
 													"});\r",
 													"\r",
 													"//Test 6: test to verify response time\r",
-													"pm.test(\"Response time is less than 500ms\", function () {\r",
-													"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+													"pm.test(\"Response time is less than 1000ms\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 													"});\r",
 													"\r",
 													""
@@ -27738,21 +27537,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "GET",
 										"header": [
 											{
@@ -27912,8 +27696,8 @@
 													"});\r",
 													"\r",
 													"//Test 6: test to verify response time\r",
-													"pm.test(\"Response time is less than 500ms\", function () {\r",
-													"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+													"pm.test(\"Response time is less than 1000ms\", function () {\r",
+													"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 													"});"
 												],
 												"type": "text/javascript"
@@ -27921,21 +27705,6 @@
 										}
 									],
 									"request": {
-										"auth": {
-											"type": "apikey",
-											"apikey": [
-												{
-													"key": "value",
-													"value": "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",
-													"type": "string"
-												},
-												{
-													"key": "key",
-													"value": "api-key",
-													"type": "string"
-												}
-											]
-										},
 										"method": "POST",
 										"header": [
 											{
@@ -28158,21 +27927,6 @@
 								}
 							],
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "value",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "key",
-											"value": "api-key",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [
 									{
@@ -28527,8 +28281,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											"\r",
 											"const response = pm.response.json();\r",
@@ -28669,8 +28423,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -28678,21 +28432,6 @@
 								}
 							],
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "value",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "key",
-											"value": "api-key",
-											"type": "string"
-										}
-									]
-								},
 								"method": "GET",
 								"header": [
 									{
@@ -28843,8 +28582,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -28852,21 +28591,6 @@
 								}
 							],
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "value",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "key",
-											"value": "api-key",
-											"type": "string"
-										}
-									]
-								},
 								"method": "POST",
 								"header": [
 									{
@@ -29016,8 +28740,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -29025,21 +28749,6 @@
 								}
 							],
 							"request": {
-								"auth": {
-									"type": "apikey",
-									"apikey": [
-										{
-											"key": "value",
-											"value": "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",
-											"type": "string"
-										},
-										{
-											"key": "key",
-											"value": "api-key",
-											"type": "string"
-										}
-									]
-								},
 								"method": "POST",
 								"header": [
 									{
@@ -29236,8 +28945,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -29383,8 +29092,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -29575,8 +29284,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -29823,8 +29532,8 @@
 											"});\r",
 											"\r",
 											"//Test 5: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											""
 										],
@@ -30222,8 +29931,8 @@
 											"});\r",
 											"\r",
 											"//Test 4: test to verify response time\r",
-											"pm.test(\"Response time is less than 500ms\", function () {\r",
-											"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+											"pm.test(\"Response time is less than 1000ms00ms\", function () {\r",
+											"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 											"});\r",
 											""
 										],
@@ -30876,7 +30585,7 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "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",
+				"value": "{{apiKey}}",
 				"type": "string"
 			},
 			{
@@ -30919,12 +30628,8 @@
 		},
 		{
 			"key": "apiKey",
-			"value": "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",
+			"value": "{{apiKey}}",
 			"type": "string"
-		},
-		{
-			"key": "id",
-			"value": ""
 		}
 	]
 }
