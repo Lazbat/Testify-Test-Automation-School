@@ -1,0 +1,2 @@
+level: log, messages: document_not_found
+level: log, messages: Webhook record does not exist

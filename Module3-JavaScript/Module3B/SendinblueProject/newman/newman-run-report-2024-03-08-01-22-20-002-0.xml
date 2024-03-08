@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sendinblue" tests="156" time="43.142">
+  <testsuite name="Sales CRM / Companies / Get all Companies" id="6343819e-baf9-4d63-8bde-c9ccddd580e4" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.755">
+    <testcase name="access-control-allow-credentials is present" time="0.755" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.755" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.755" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000B" time="0.755" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Create a company" id="00e5cdf5-0f26-4148-bfec-ba86722e28f8" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.299">
+    <testcase name="Response time is less than 1000ms" time="0.299" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.299" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get company attributes" id="73e83f24-8358-4d8f-8a9c-819152d9c85c" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.362">
+    <testcase name="Content-Type is present" time="0.362" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.362" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.362" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Link and Unlink company with contact and deal" id="5f4f32bb-6306-49fa-a764-5d1bd22c09fe" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.271">
+    <testcase name="confirm the value of message" time="0.271" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.271" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.271" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get a company" id="a87c2377-95cb-49ee-8283-db24fe14c445" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.246">
+    <testcase name="access-control-allow-credentials is present" time="0.246" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.246" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.246" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Delete a company" id="bef00359-6fe3-47bb-bdd2-1be04d399f71" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.228">
+    <testcase name="confirm the value of message" time="0.228" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.228" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.228" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Update a company" id="5662bdf8-3593-4ca2-94f5-50561a98f6ab" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.277">
+    <testcase name="Content-Type is present" time="0.277" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.277" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.277" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Companies / Get pipeline stages" id="9f73cabe-a63d-4b6b-86a5-f56b0e7cc0b4" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.239">
+    <testcase name="access-control-allow-credentials is present" time="0.239" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.239" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.239" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get all deals" id="a94ea189-c051-4edf-9194-44917235ccc7" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.332">
+    <testcase name="access-control-allow-credentials is present" time="0.332" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.332" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.332" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Create a deal" id="dd630623-1360-4ff9-969e-c3545b4a9df5" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.270">
+    <testcase name="Response time is less than 1000ms" time="0.270" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.270" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.270" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Link and Unlink a deal with contacts and companies" id="b4230a52-c8f7-47c8-855b-4f493822e5d0" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.637">
+    <testcase name="confirm the value of message" time="0.637" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.637" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.637" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get deal attributes" id="56309cf2-6c13-4cf0-9e97-d589a8ec6a00" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.802">
+    <testcase name="Verify the value of type" time="0.802" classname="Sendinblue"/>
+    <testcase name="Verify the value of detail" time="0.802" classname="Sendinblue"/>
+    <testcase name="Verify the value of status" time="0.802" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Get a deal" id="3e598bce-c401-424d-82dc-0ce45e55a5cd" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.244">
+    <testcase name="Response time is less than 1000ms" time="0.244" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.244" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.244" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Delete a deal" id="7939f721-c941-46c8-a560-4c1e6fa9fb92" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.256">
+    <testcase name="confirm the value of message" time="0.256" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.256" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.256" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Deals / Update a deal" id="7acd3a8d-e91d-4664-aa8e-b7aac180e3ac" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.241">
+    <testcase name="confirm the value of message" time="0.241" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.241" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.241" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all tasks" id="d9f45383-abd3-4584-9421-628e224215b0" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.393">
+    <testcase name="confirm the value of message" time="0.393" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.393" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.393" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Create a task" id="c2699369-4c50-4a6c-83f5-132046d60f5c" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.557">
+    <testcase name="Confirm that message is Not valid data." time="0.557" classname="Sendinblue"/>
+    <testcase name="Verify the value of field is contactsIds" time="0.557" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.557" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get all task types" id="9a0c68c2-708d-40c3-be65-8275c6f4b829" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.587">
+    <testcase name="Search for id 65e64428ab2229627d9c7df1 " time="0.587" classname="Sendinblue"/>
+    <testcase name="Search for title Todo " time="0.587" classname="Sendinblue"/>
+    <testcase name="Search for title Lunch " time="0.587" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Get a task" id="87fbc60e-3eb2-4860-a121-d360239da0e7" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.455">
+    <testcase name="confirm the value of message" time="0.455" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.455" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.455" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Delete a task" id="36120fba-b919-4d3f-9500-b78ac4943cdd" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.526">
+    <testcase name="Content-Type is present" time="0.526" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.526" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.526" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Tasks / Update a task" id="7956d4cb-72cf-4abe-8c18-fe5a64303840" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.457">
+    <testcase name="Content-Type is present" time="0.457" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.457" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.457" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get all notes" id="fdcd669a-a529-498f-9cd0-3e71aecc446b" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.282">
+    <testcase name="Response time is less than 1000ms" time="0.282" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.282" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.282" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Create a note" id="df7f8cfd-150a-4ac8-886b-c574dcae21f1" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.286">
+    <testcase name="Content-Type is present" time="0.286" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.286" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.286" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Get a note" id="d8069d7e-2904-4d82-9171-2948f62ac6e8" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="1" errors="0" time="1.275">
+    <testcase name="Content-Type is present" time="1.275" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="1.275" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="1.275" classname="Sendinblue">
+      <failure type="AssertionFailure" message="expected 1275 to be below 1000">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 5cbd4b2a-9146-49f5-bbcc-8fab8032f26b.]]>
+        <![CDATA[Collection name: Sendinblue.]]>
+        <![CDATA[Request name: Sales CRM / Notes / Get a note.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected 1275 to be below 1000.]]>
+        <![CDATA[Stacktrace: AssertionError: expected 1275 to be below 1000
+   at Object.eval sandbox-script.js:3:24).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Update a note" id="786fcccf-aaa2-44f1-9590-c2c4bbf94919" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.235">
+    <testcase name="Content-Type is present" time="0.235" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.235" classname="Sendinblue"/>
+    <testcase name="Response time is below 1000ms" time="0.235" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Notes / Delete a note" id="38190356-a569-4a2a-a93b-cc43e4db67b0" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.249">
+    <testcase name="confirm the value of message" time="0.249" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.249" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.249" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get all files" id="e203a8e3-483a-408e-b618-58329eb79971" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.229">
+    <testcase name="Response time is less than 1000ms" time="0.229" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.229" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.229" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Upload a file" id="a2f981b4-5a92-448f-a3ec-210a17afa9ff" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.233">
+    <testcase name="confirm the value of message" time="0.233" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.233" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.233" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Download a file" id="4460b986-dc70-457e-ad27-dd7da6f223ab" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.267">
+    <testcase name="Response time is less than 1000ms" time="0.267" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.267" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.267" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.267" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Delete a file" id="e0fe7e2e-d04b-4719-8123-2f03cae89237" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.260">
+    <testcase name="Content-Type is present" time="0.260" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.260" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.260" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.260" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Sales CRM / Files / Get file details" id="21f080c5-b235-4960-982e-b6b1b1ca7cdb" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.281">
+    <testcase name="Content-Type is present" time="0.281" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.281" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.281" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.281" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an email campaign report" id="bdb9a41f-0c4b-4be1-9546-6c6c90e881f0" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.246">
+    <testcase name="confirm the value of code" time="0.246" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.246" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign" id="ecd98b10-3c50-4501-b0e3-c9d0bf0b59e3" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.251">
+    <testcase name="access-control-allow-credentials is present" time="0.251" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.251" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Delete an email campaign" id="0e4554e1-01c0-4317-8cca-c9637313537b" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.225">
+    <testcase name="confirm the value of code" time="0.225" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.225" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign immediately, based on campaignId" id="c7a15565-3300-49a8-bfef-aa5ac947177e" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.233">
+    <testcase name="confirm the value of code" time="0.233" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.233" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send an email campaign to your test list" id="906ed83e-d2c3-480b-8fab-ef72128327d9" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.254">
+    <testcase name="access-control-allow-credentials is present" time="0.254" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.254" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Update an email campaign status" id="1c73c39d-7f2b-4fb7-8ed4-30e9fef02415" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.231">
+    <testcase name="confirm the value of code" time="0.231" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.231" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Send the report of a campaign" id="e154a701-5dbf-4890-927b-6eee9ffbb1bc" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.274">
+    <testcase name="access-control-allow-credentials is present" time="0.274" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.274" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get an A/B test email campaign results" id="840275b5-e009-4eae-a06b-41d9b7d9357c" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.231">
+    <testcase name="access-control-allow-credentials is present" time="0.231" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.231" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Get a shared template url" id="de20e4ed-2d4a-4001-86aa-9868d49cf2b8" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.231">
+    <testcase name="confirm the value of code" time="0.231" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.231" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Export the recipients of an email campaign" id="94469f4e-60c3-4637-8411-1abede389c1a" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.243">
+    <testcase name="confirm the value of code" time="0.243" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.243" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Return all your created email campaigns" id="84b265c6-05de-47e1-9da2-48adb92065ab" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.241">
+    <testcase name="access-control-allow-credentials is present" time="0.241" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.241" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Create an email campaign" id="8cd61f4d-2a44-4556-a0f8-5502bda2a85c" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.217">
+    <testcase name="Response time is less than 1000ms" time="0.217" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.217" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / Email Campaigns / Upload an image to your account's image gallery" id="25342032-6e43-48bd-a65d-7f41ae2bc835" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.397">
+    <testcase name="Content-Type is present" time="0.397" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.397" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Returns the information for all your created SMS campaigns" id="1b6ce9a4-9edb-43f7-8c49-72c1c3862d85" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.217">
+    <testcase name="Content-Type is present" time="0.217" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.217" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Creates an SMS campaign" id="25f6bd4d-6a15-49c9-9f46-c4d04d435169" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.221">
+    <testcase name="Content-Type is present" time="0.221" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.221" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Get an SMS campaign" id="f26061e8-c5dd-4202-9d98-295ae4234c5a" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.211">
+    <testcase name="confirm the value of code" time="0.211" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.211" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update an SMS campaign" id="87afc702-d40f-4f05-9eaa-a9c70341ae87" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.249">
+    <testcase name="confirm the value of code" time="0.249" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.249" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Delete an SMS campaign" id="b69895e9-6c78-4e8e-9340-5ae924c9b669" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.226">
+    <testcase name="confirm the value of code" time="0.226" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.226" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send your SMS campaign immediately" id="2a8e6e6b-6fda-453d-8cf7-1a6b5106fb1d" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.279">
+    <testcase name="Content-Type is present" time="0.279" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.279" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Update a campaign's status" id="5b8f721d-4522-41b7-a9ea-bb3b1a7362fa" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.242">
+    <testcase name="confirm the value of code" time="0.242" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.242" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send a test SMS campaign" id="5c3d5515-ac22-4f79-bf1f-f5c789f12d70" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.228">
+    <testcase name="Response time is less than 1000ms" time="0.228" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.228" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Export an SMS campaign's recipients" id="61004a1e-2b66-4b2c-a187-3484c3b17b8c" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.197">
+    <testcase name="Content-Type is present" time="0.197" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.197" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Marketing / SMS Campaigns / Send an SMS campaign's report" id="095cdf03-a572-4de7-9362-5b82fb071dfc" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.321">
+    <testcase name="Content-Type is present" time="0.321" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.321" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Send a message as an agent" id="e8fd4322-ed79-4c2f-8a96-fb8728a1e200" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.371">
+    <testcase name="confirm the value of code" time="0.371" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.371" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.371" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.371" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Get a message" id="070858f9-3cdb-4c2d-8d89-cfba547cd961" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.348">
+    <testcase name="confirm the value of code" time="0.348" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.348" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.348" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.348" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Update a message sent by an agent" id="226d5431-68d5-4990-8860-ef19fdf758ac" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.283">
+    <testcase name="confirm the value of code" time="0.283" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.283" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.283" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.283" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Messages / Delete a message sent by an agent" id="b3f1f662-b9f3-4c36-b454-e48465cd50fa" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.384">
+    <testcase name="confirm the value of code" time="0.384" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.384" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.384" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.384" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Status / Sets agent’s status to online for 2-3 minutes" id="049161df-6876-49ec-9533-8f41c659520e" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.335">
+    <testcase name="confirm the value of code" time="0.335" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.335" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.335" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.335" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Send an automated message to a visitor" id="16528741-edd8-49cb-9458-7b9165efde43" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.262">
+    <testcase name="confirm the value of code" time="0.262" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.262" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.262" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.262" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Get an automated message" id="4c30ea8b-3d89-4018-a98a-5b5e03a1cef9" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.290">
+    <testcase name="confirm the value of code" time="0.290" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.290" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.290" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.290" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Update an automated message" id="cd6cb6fc-7c31-430c-a787-13285c759820" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.290">
+    <testcase name="confirm the value of code" time="0.290" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.290" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.290" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.290" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Conversations / Pushed messages / Delete an automated message" id="896fd6e5-99df-48f9-9aa4-6c22e0283bf1" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.271">
+    <testcase name="confirm the value of code" time="0.271" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.271" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.271" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.271" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get all the contacts" id="29f5b1da-5f8a-4982-a750-8df2f926220b" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.254">
+    <testcase name="Content-Length is present" time="0.254" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Length header is 50" time="0.254" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create a contact" id="545047e4-3b8c-4ef2-be1f-b321e4b0e2ec" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.209">
+    <testcase name="Content-Length is present" time="0.209" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.209" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Create Contact via DOI (Double-Opt-In) Flow" id="e7abb324-0dc5-411f-942b-55c2185e4e1d" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.205">
+    <testcase name="confirm the value of code" time="0.205" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.205" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update multiple contacts" id="a3af7217-3dfc-40e2-b71e-fed2dfd94397" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.225">
+    <testcase name="confirm the value of code" time="0.225" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.225" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Export contacts" id="91b3a3e0-ee88-4a61-a169-2c1845a0e164" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.218">
+    <testcase name="access-control-allow-credentials is present" time="0.218" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.218" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Import contacts" id="7ba7a112-680d-4cda-85a5-0f73fb04b9e0" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.217">
+    <testcase name="access-control-allow-credentials is present" time="0.217" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.217" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get a contact's details" id="c93645c1-09f1-49fa-ab69-969dde00cded" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.204">
+    <testcase name="confirm the value of code" time="0.204" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.204" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Delete a contact" id="1d2044be-c803-4f7b-a2bf-8234cacccdcb" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.191">
+    <testcase name="Status code is 400" time="0.191" classname="Sendinblue"/>
+    <testcase name="Status code name has string" time="0.191" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Update a contact" id="1798f88e-793f-496c-8cc8-1d6842b9155a" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.208">
+    <testcase name="confirm the value of code" time="0.208" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.208" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Contacts / Get email campaigns' statistics for a contact" id="a4d64fcd-9edd-4806-bd43-cf04fdba4678" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.194">
+    <testcase name="confirm the value of code" time="0.194" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.194" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get all folders" id="9bc13db1-57d2-4e90-86ff-0140f9e33f16" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.288">
+    <testcase name="Confirm the value of name is Wordpress Contacts" time="0.288" classname="Sendinblue"/>
+    <testcase name="Confirm the value of uniqueSubscribers " time="0.288" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Create a folder" id="5eb71e5c-4be9-4c17-b77a-806a31912de2" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.267">
+    <testcase name="Successful POST request" time="0.267" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.267" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Returns a folder's details" id="0dc0e604-4602-44b9-b0c5-f2307ccc5683" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.210">
+    <testcase name="confirm the value of code" time="0.210" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.210" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Update a folder" id="9279043c-0794-4926-bd55-9d782455ce90" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.217">
+    <testcase name="confirm the value of code" time="0.217" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.217" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Delete a folder (and all its lists)" id="4d56f846-d979-470f-9e9e-71dd46263797" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.208">
+    <testcase name="confirm the value of code" time="0.208" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.208" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Folders / Get lists in a folder" id="224760d8-0091-4832-8b9e-85e814629e21" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.225">
+    <testcase name="confirm the value of code" time="0.225" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.225" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get all the lists" id="77dcfa4a-d1a9-40ae-bded-d791d7764dfc" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.260">
+    <testcase name="Verify that folderId is 1" time="0.260" classname="Sendinblue"/>
+    <testcase name="Verify that count is 1" time="0.260" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Create a list" id="34cc2c8f-7ea9-41e0-8b88-b2ffc357265c" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.251">
+    <testcase name="confirm the value of code" time="0.251" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.251" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get contacts in a list" id="82ad034f-62e5-4594-ab79-e5fc19c3794e" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.230">
+    <testcase name="confirm the value of code" time="0.230" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.230" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Add existing contacts to a list" id="16030add-2733-42d5-b5a2-4dee3b3b2a77" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.198">
+    <testcase name="confirm the value of code" time="0.198" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.198" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a contact from a list" id="2ec97212-58d1-4f23-a7dd-1a465f5e85f9" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.230">
+    <testcase name="confirm the value of code" time="0.230" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.230" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Get a list's details" id="9bd47200-d25f-4736-8b4b-f734462fd778" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.212">
+    <testcase name="access-control-allow-credentials is present" time="0.212" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.212" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Update a list" id="df23aca5-3e60-4832-aed7-95f4cbac1d5b" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.220">
+    <testcase name="access-control-allow-credentials is present" time="0.220" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.220" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Lists / Delete a list" id="d1b289b9-d02b-408a-a0a4-46c81431f8b3" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.196">
+    <testcase name="access-control-allow-credentials is present" time="0.196" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.196" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / List all attributes" id="87b45211-7c01-4c86-ab72-62fa9b7ac072" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.248">
+    <testcase name="Verify that category is global" time="0.248" classname="Sendinblue"/>
+    <testcase name="Verify that type is float" time="0.248" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Update contact attribute" id="707194cf-0a33-460f-aa3b-52736fbabd9d" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.208">
+    <testcase name="access-control-allow-credentials is present" time="0.208" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.208" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Create contact attribute" id="7e58b23d-1d67-4d33-bacc-223340d9e830" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.207">
+    <testcase name="access-control-allow-credentials is present" time="0.207" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.207" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Contact management / Attributes / Delete an attribute" id="bbf34f0b-d386-4942-af2e-003cc0cd6aa3" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.225">
+    <testcase name="access-control-allow-credentials is present" time="0.225" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.225" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Send a transactional email" id="1ac4b631-7c10-4bdc-bde7-ac5dbf90bd6a" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.224">
+    <testcase name="Verify the value of code" time="0.224" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.224" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the list of transactional emails on the basis of allowed filters" id="16013f2b-55c7-4b4d-9f4e-d2d190304b9f" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.208">
+    <testcase name="Server is present" time="0.208" classname="Sendinblue"/>
+    <testcase name="Vary is present" time="0.208" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Delete scheduled emails by batchId or messageId" id="5eee63a6-eb20-4127-9847-c8fdd98b2940" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.326">
+    <testcase name="Verify the value of code" time="0.326" classname="Sendinblue"/>
+    <testcase name="Verify the value of message" time="0.326" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Get the personalized content of a sent transactional email" id="27f2a3bc-6954-4373-b8b1-865d58c63163" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.360">
+    <testcase name="Verify the value of message" time="0.360" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.360" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Email API / Fetch scheduled emails by batchId or messageId" id="f4c3cd76-2e0a-4476-bf40-0cbc5aca70fb" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.241">
+    <testcase name="Verify the value of message" time="0.241" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.241" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Get the list of email templates" id="6fce8298-dca6-4a94-99c7-4e2914939fb1" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.216">
+    <testcase name="Confirm response " time="0.216" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.216" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Create an email template" id="c4ac7b93-473a-4365-8910-769259f6ee7b" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.231">
+    <testcase name="access-control-allow-credentials is present" time="0.231" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.231" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Returns the template information" id="5d52ea9b-11fe-4646-b8cb-5f678cf0db8d" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.251">
+    <testcase name="access-control-allow-credentials is present" time="0.251" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.251" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Update an email template" id="d320b497-81fd-4dfc-9c3b-ed719d81aeca" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.220">
+    <testcase name="access-control-allow-credentials is present" time="0.220" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.220" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Delete an inactive email template" id="4555489d-3c2a-4106-bf2d-1527ecc41fc5" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.217">
+    <testcase name="confirm the value of code" time="0.217" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.217" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Templates / Send a template to your test list" id="74f654ff-9bfe-4961-965c-5237ebb9e242" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.222">
+    <testcase name="confirm the value of code" time="0.222" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.222" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated over a period of time" id="a8fada4e-909c-4c32-828a-adecdd855394" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.213">
+    <testcase name="confirm the value of code" time="0.213" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.213" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get your transactional email activity aggregated per day" id="c768fc3a-0346-44b6-8b98-d52ad96cef41" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.206">
+    <testcase name="confirm the value of code" time="0.206" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.206" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Statistics / Get all your transactional email activity (unaggregated events)" id="2a6df227-c64f-4859-a2da-e364b74ddbc9" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.214">
+    <testcase name="confirm the value of code" time="0.214" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.214" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Get the list of blocked or unsubscribed transactional contacts" id="67d802a4-43f4-4278-9af0-0312b8674bde" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.247">
+    <testcase name="access-control-allow-credentials is present" time="0.247" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.247" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Contacts / Unblock or resubscribe a transactional contact" id="6da6771b-b137-45c4-9236-ed851e68dd20" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.215">
+    <testcase name="confirm the value of code" time="0.215" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.215" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Get the list of blocked domains" id="a09efcc7-a1d2-4876-ab84-c12ea92b08b0" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.217">
+    <testcase name="Confirm the value for domains" time="0.217" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.217" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Add a new domain to the list of blocked domains" id="291bda4a-a40d-46bd-a233-f457101f4c56" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.227">
+    <testcase name="Content-Type is present" time="0.227" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.227" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Blocked Domains / Unblock an existing domain from the list of blocked domains" id="8ffc5382-7102-47fa-9919-51ce0041fd8d" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.216">
+    <testcase name="confirm the value of code" time="0.216" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.216" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete hardbounces" id="4fbeaa4a-167c-4415-8ac5-b03941f4b452" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.209">
+    <testcase name="confirm the value of code" time="0.209" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.209" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Logs / Delete an SMTP transactional log" id="a4eb89c9-98a1-4654-a29a-1d1b658c8961" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.237">
+    <testcase name="confirm the value of code" time="0.237" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.237" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Get the list of all the events for the received emails." id="deb0e7c0-5751-474d-bb43-77253973b35f" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.243">
+    <testcase name="access-control-allow-credentials is present" time="0.243" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.243" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Fetch all events history for one particular received email." id="e06a122b-2d20-4460-9f96-fc11bde9fa86" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.204">
+    <testcase name="access-control-allow-credentials is present" time="0.204" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.204" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Inbound Email Parsing / Retrieve inbound attachment with download token." id="30dee284-785f-4878-9035-d66ac4d22c65" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.279">
+    <testcase name="Status code is 406" time="0.279" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.279" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / Transactional SMS / Send SMS message to a mobile number" id="22de7c6f-9301-4a86-a436-763d497a364e" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.231">
+    <testcase name="access-control-allow-credentials is present" time="0.231" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.231" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated over a period of time" id="72c3be88-5705-48c1-96b4-141cacb19870" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.219">
+    <testcase name="confirm the value of code" time="0.219" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.219" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get your SMS activity aggregated per day" id="47951fdd-cc72-4fa4-be83-5fa48657c774" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.224">
+    <testcase name="confirm the value of code" time="0.224" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.224" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Transactional / SMS statistics / Get all your SMS activity (unaggregated events)" id="9e1c4b9f-8d1f-403b-823f-23859e69c7fd" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.366">
+    <testcase name="confirm the value of code" time="0.366" classname="Sendinblue"/>
+    <testcase name="confirm the value of message" time="0.366" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Get all webhooks" id="4351f910-bb7d-47bf-adc4-6d8734d47da3" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.244">
+    <testcase name="Verify that code is document_not_found" time="0.244" classname="Sendinblue"/>
+    <testcase name="Verify the value of message " time="0.244" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.244" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.244" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Create a webhook" id="c909190d-81e0-444a-bb17-996046e29d1f" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.290">
+    <testcase name="Content-Type is present" time="0.290" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.290" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.290" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials is true,true" time="0.290" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Get a webhook details" id="a7346d6f-6ce6-4f09-92c3-9e74815012f1" timestamp="2024-03-08T01:21:22.052Z" tests="5" failures="0" errors="0" time="0.286">
+    <testcase name="Verify the value of url" time="0.286" classname="Sendinblue"/>
+    <testcase name="Search for events that is hardBounce" time="0.286" classname="Sendinblue"/>
+    <testcase name="Verify the value of description" time="0.286" classname="Sendinblue"/>
+    <testcase name="Verify the value of id" time="0.286" classname="Sendinblue"/>
+    <testcase name="Search for events that is listAddition" time="0.286" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Update a webhook" id="1f9a7df3-3042-453f-a8dc-bf8825162e8b" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.297">
+    <testcase name="Content-Type is present" time="0.297" classname="Sendinblue"/>
+    <testcase name="Verify that sib-request-id is present" time="0.297" classname="Sendinblue"/>
+    <testcase name="access-control-allow-credentials is present" time="0.297" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Webhooks / Delete a webhook" id="dc90dd8a-b5dd-4855-a5a3-9a7dd41666df" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.297">
+    <testcase name="Content-Type is present" time="0.297" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.297" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.297" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Add Email and/or SMS credits to a specific child account" id="636c64f1-b66c-4a07-bdd1-67192b488990" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.220">
+    <testcase name="Content-Type is present" time="0.220" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.220" classname="Sendinblue"/>
+    <testcase name="Verify that code is reseller_permission_denied " time="0.220" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Credits / Remove Email and/or SMS credits from a specific child account" id="6cd64a0a-4c85-4472-9e94-f9de9e065e50" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.265">
+    <testcase name="Verify that code is reseller_permission_denied" time="0.265" classname="Sendinblue"/>
+    <testcase name="Verify the value of message " time="0.265" classname="Sendinblue"/>
+    <testcase name="etag is present" time="0.265" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.265" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / IP management / Associate a dedicated IP to the child" id="3dd042f9-81bc-40d2-99b4-92d4cd6df053" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.225">
+    <testcase name="Content-Type is present" time="0.225" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.225" classname="Sendinblue"/>
+    <testcase name="verify the value of code is reseller_permission_denied1 " time="0.225" classname="Sendinblue"/>
+    <testcase name="verify the value of message" time="0.225" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / IP management / Dissociate a dedicated IP to the child" id="a96e97fd-d282-460a-9d53-9fd967e1788d" timestamp="2024-03-08T01:21:22.052Z" tests="5" failures="0" errors="0" time="0.222">
+    <testcase name="Content-Type is present" time="0.222" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.222" classname="Sendinblue"/>
+    <testcase name="Status code is 403" time="0.222" classname="Sendinblue"/>
+    <testcase name="verify the value of code is reseller_permission_denied1 " time="0.222" classname="Sendinblue"/>
+    <testcase name="verify the value of message" time="0.222" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Get all sender domains for a specific child account" id="25c82ceb-5cc3-4a6e-bc70-999333a63a50" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.226">
+    <testcase name="Strict-Transport-Security is present" time="0.226" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.226" classname="Sendinblue"/>
+    <testcase name="verify the value of code is reseller_permission_denied1 " time="0.226" classname="Sendinblue"/>
+    <testcase name="verify the value of message" time="0.226" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Create a domain for a child account" id="d165f85a-c401-4d2f-8ab3-904baf1df14d" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.213">
+    <testcase name="Status code name has string" time="0.213" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.213" classname="Sendinblue"/>
+    <testcase name="verify the value of code is reseller_permission_denied1 " time="0.213" classname="Sendinblue"/>
+    <testcase name="verify the value of message" time="0.213" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Update the sender domain of reseller's child based on the childIdentifier and domainName passed" id="4b193b40-8466-4106-98ba-318eba6ba7fb" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.231">
+    <testcase name="Content-Type is present" time="0.231" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.231" classname="Sendinblue"/>
+    <testcase name="verify the value of code is reseller_permission_denied1 " time="0.231" classname="Sendinblue"/>
+    <testcase name="verify the value of message" time="0.231" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Domains / Delete the sender domain of the reseller child based on the childIdentifier and domainName passed" id="a88752b2-fc3d-40bb-ae60-35f88ff00e05" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.242">
+    <testcase name="Verify that code is reseller_permission_denied " time="0.242" classname="Sendinblue"/>
+    <testcase name="Verify that message is Current account is not a reseller" time="0.242" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.242" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.242" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get a child account's details" id="3f8a02e3-349a-4187-8607-a2ef3e74a21b" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.231">
+    <testcase name="Transfer-Encoding is present" time="0.231" classname="Sendinblue"/>
+    <testcase name="CF-Ray is present" time="0.231" classname="Sendinblue"/>
+    <testcase name="Content-Type is present" time="0.231" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.231" classname="Sendinblue"/>
+    <testcase name="verify the value of code is reseller_permission_denied1 " time="0.231" classname="Sendinblue"/>
+    <testcase name="verify the value of message" time="0.231" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child based on the child identifier supplied" id="4e61287e-f771-4063-8cfc-afedc83e5d9f" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.264">
+    <testcase name="Verify the value for code is reseller_permission_denied" time="0.264" classname="Sendinblue"/>
+    <testcase name="Verify the value of message is Current account is not a reseller " time="0.264" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.264" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.264" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Delete a single reseller child based on the child identifier supplied" id="6d5dab06-92fd-4748-8cfd-593f257fe56a" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.244">
+    <testcase name="Verify that Content-Type header is application/json; charset=utf-8" time="0.244" classname="Sendinblue"/>
+    <testcase name="Verify that Transfer-Encoding header is chunked" time="0.244" classname="Sendinblue"/>
+    <testcase name="Verify the value for code is reseller_permission_denied" time="0.244" classname="Sendinblue"/>
+    <testcase name="Verify the value of message is Current account is not a reseller " time="0.244" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.244" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.244" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Update info of reseller's child account status based on the identifier supplied" id="4efb6d31-2fe6-49ff-a7c5-eb54a469fb1f" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.256">
+    <testcase name="access-control-allow-credentials is present" time="0.256" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.256" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.256" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.256" classname="Sendinblue"/>
+    <testcase name="Verify the value for code is reseller_permission_denied" time="0.256" classname="Sendinblue"/>
+    <testcase name="Verify the value of message is Current account is not a reseller " time="0.256" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied" id="0d8bbf67-014e-453e-b49e-74226f791bf1" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.238">
+    <testcase name="x-sib-server is present" time="0.238" classname="Sendinblue"/>
+    <testcase name="Etag is present" time="0.238" classname="Sendinblue"/>
+    <testcase name="Verify the value for code is reseller_permission_denied" time="0.238" classname="Sendinblue"/>
+    <testcase name="Verify the value of message is Current account is not a reseller " time="0.238" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get session token to access Sendinblue (SSO)" id="1e115e5e-3003-44e6-a369-88335e4334d2" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.247">
+    <testcase name="Strict-Transport-Security is present" time="0.247" classname="Sendinblue"/>
+    <testcase name="Verify that Strict-Transport-Security header is max-age=0; includeSubDomains" time="0.247" classname="Sendinblue"/>
+    <testcase name="Verify the value for code is reseller_permission_denied" time="0.247" classname="Sendinblue"/>
+    <testcase name="Verify the value of message is Current account is not a reseller " time="0.247" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.247" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.247" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Get the list of all children accounts" id="f0ae2b84-a312-4e09-92c8-d46a62aeb905" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.244">
+    <testcase name="CF-Ray is present" time="0.244" classname="Sendinblue"/>
+    <testcase name="CF-Cache-Status is present" time="0.244" classname="Sendinblue"/>
+    <testcase name="Verify the value for code is reseller_permission_denied" time="0.244" classname="Sendinblue"/>
+    <testcase name="Verify the value of message is Current account is not a reseller " time="0.244" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.244" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.244" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Reseller / Child accounts / Creates a reseller child" id="ef8fb7cb-bf5b-4c23-a661-a1b5262ef8f1" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.229">
+    <testcase name="Verify that x-frame-options header is SAMEORIGIN" time="0.229" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-methods header is PUT, POST, GET, DELETE, PATCH, OPTIONS" time="0.229" classname="Sendinblue"/>
+    <testcase name="Verify the value for code is reseller_permission_denied" time="0.229" classname="Sendinblue"/>
+    <testcase name="Verify the value of message is Current account is not a reseller " time="0.229" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.229" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.229" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Process / Return all the processes for your account" id="7c0e1cb1-19dd-4651-ad0a-478471893bad" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.225">
+    <testcase name="Verify the value of id" time="0.225" classname="Sendinblue"/>
+    <testcase name="Verify the value of status" time="0.225" classname="Sendinblue"/>
+    <testcase name="Verify the value of name" time="0.225" classname="Sendinblue"/>
+    <testcase name="Verify the value of count is 3" time="0.225" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Process / Return the informations for a process" id="4b537bd6-3a95-4e02-93e7-b0df85e5105e" timestamp="2024-03-08T01:21:22.052Z" tests="5" failures="0" errors="0" time="0.209">
+    <testcase name="Verify that status is queued" time="0.209" classname="Sendinblue"/>
+    <testcase name="Verify that name is TRANS-GLOBAL-CALC" time="0.209" classname="Sendinblue"/>
+    <testcase name="Verify that id is 3" time="0.209" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.209" classname="Sendinblue"/>
+    <testcase name="Response time is less than 500ms" time="0.209" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get the details of requested master account" id="c728e292-4604-42fb-9245-214c16842c42" timestamp="2024-03-08T01:21:22.052Z" tests="6" failures="0" errors="0" time="0.224">
+    <testcase name="Content-Type is present" time="0.224" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Type header is application/json" time="0.224" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.224" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.224" classname="Sendinblue"/>
+    <testcase name="Verify the value of message" time="0.224" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.224" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get the list of all the sub-accounts of the master account." id="2f41e789-0c74-41cf-b0a2-c26e44b1feeb" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.202">
+    <testcase name="Verify the value of message" time="0.202" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.202" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.202" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.202" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Create a new sub-account under a master account." id="2d0c7e28-913c-42b4-afd7-045e21925af4" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.242">
+    <testcase name="Verify the value of message" time="0.242" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.242" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.242" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.242" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Generate SSO token to access Sendinblue" id="feeddfa2-1f8b-4cc6-a905-c0b67f5f2412" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.211">
+    <testcase name="Verify the value of message" time="0.211" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.211" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.211" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.211" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Get sub-account details" id="811c3275-3815-428d-9cfd-e3665deef843" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.220">
+    <testcase name="Verify the value of message" time="0.220" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.220" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.220" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.220" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Delete a sub-account" id="fca67fd4-f952-4023-9394-47997a03293c" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.201">
+    <testcase name="Content-Encoding is present" time="0.201" classname="Sendinblue"/>
+    <testcase name="Verify that Content-Encoding header is br" time="0.201" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.201" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.201" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Corporate / Update sub-account plan" id="fec21e05-58b1-4769-82d0-9d2fb1248bad" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.218">
+    <testcase name="Verify the value of message" time="0.218" classname="Sendinblue"/>
+    <testcase name="Verify the value of code" time="0.218" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.218" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.218" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Account data / Get your account information, plan and credits details" id="d1fe8d7e-235c-44dd-854b-7cfbf1148e41" timestamp="2024-03-08T01:21:22.052Z" tests="5" failures="0" errors="0" time="0.305">
+    <testcase name="Verify the value of organization_id" time="0.305" classname="Sendinblue"/>
+    <testcase name="Verify the value of credits in plan" time="0.305" classname="Sendinblue"/>
+    <testcase name="Verify the value of type in plan" time="0.305" classname="Sendinblue"/>
+    <testcase name="Response size is above  1000B" time="0.305" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms" time="0.305" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Get the list of all your senders" id="24f90ec2-7165-47e4-9647-756a107492c2" timestamp="2024-03-08T01:21:22.052Z" tests="3" failures="0" errors="0" time="0.294">
+    <testcase name="Verify the value of code" time="0.294" classname="Sendinblue"/>
+    <testcase name="Verify the value of message" time="0.294" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.294" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Create a new sender" id="a59a2bdb-059a-4acc-9af7-264a912c9433" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.683">
+    <testcase name="Confirm that id is 2" time="0.683" classname="Sendinblue"/>
+    <testcase name="Confirm that spfError is true" time="0.683" classname="Sendinblue"/>
+    <testcase name="Confirm that dkimError is false" time="0.683" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.683" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for your account" id="d7fe91df-e378-48be-8b01-6651982a7e65" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.317">
+    <testcase name="Status code is 200" time="0.317" classname="Sendinblue"/>
+    <testcase name="Verify the value of ips" time="0.317" classname="Sendinblue"/>
+    <testcase name="Response size is less than 1000B" time="0.317" classname="Sendinblue"/>
+    <testcase name="Response time is less than 1000ms00ms" time="0.317" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Update a sender" id="cc07c158-dff5-4519-a063-57c4147bdce2" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.310">
+    <testcase name="cache-control is present" time="0.310" classname="Sendinblue"/>
+    <testcase name="Verify that cache-control header is no-cache, private" time="0.310" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Delete a sender" id="1369b99d-d139-497c-984e-11dd4891c1b8" timestamp="2024-03-08T01:21:22.052Z" tests="2" failures="0" errors="0" time="0.314">
+    <testcase name="Status code is 204" time="0.314" classname="Sendinblue"/>
+    <testcase name="Status code name has string" time="0.314" classname="Sendinblue"/>
+  </testsuite>
+  <testsuite name="Account / Senders / Get all the dedicated IPs for a sender" id="fb092133-250e-41ad-b12f-304bd7504225" timestamp="2024-03-08T01:21:22.052Z" tests="4" failures="0" errors="0" time="0.318">
+    <testcase name="Status code name has string" time="0.318" classname="Sendinblue"/>
+    <testcase name="Verify the value of ips" time="0.318" classname="Sendinblue"/>
+    <testcase name="Verify that access-control-allow-credentials header is true,true" time="0.318" classname="Sendinblue"/>
+    <testcase name="Verify the value of access-control-allow-methods header" time="0.318" classname="Sendinblue"/>
+  </testsuite>
+</testsuites>
