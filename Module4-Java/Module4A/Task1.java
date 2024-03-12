@@ -7,6 +7,6 @@ public class Main {
         System.out.println("I am a Quality Assurance Engineer.");
         System.out.println("I have two pet cats.");
         System.out.println("The female is Daisy.");
-        System.out.println("The maile is Roy.");
+        System.out.println("The male is Roy.");
     }
 }
