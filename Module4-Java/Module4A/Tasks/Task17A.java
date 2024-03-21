@@ -15,13 +15,13 @@ public abstract class Task17A {
 
     //The below will not be applicable to all login pages
     public void rememberMeCheckBox(){
-
+        System.out.println();
     }
     public void continueToHomePage(){
-
+        System.out.println();
     }
     public void OAuthButton(){
-
+        System.out.println();
     }
 
 }
