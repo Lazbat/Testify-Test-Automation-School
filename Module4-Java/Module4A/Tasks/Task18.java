@@ -22,6 +22,8 @@ public class Task18 {
 
             // Close the scanner
             userInput.close();
+        } finally {
+            System.out.println("You are Eligible");
         }
     }
 }
