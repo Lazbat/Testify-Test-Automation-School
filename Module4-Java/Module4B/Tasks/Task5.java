@@ -28,6 +28,6 @@ public class Task5 {
         driver.findElement(By.xpath("//div[@id='shopping_cart_container']/a")).click();
         Thread.sleep(5000);
         //Click on checkout
-        driver.findElement(By.xpath("//button[@id='checkout']")).click();
+        driver.findElement(By.xpath("//a[@class='btn_action checkout_button']")).click();
     }
 }
