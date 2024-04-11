@@ -2,7 +2,6 @@ package org.example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -17,11 +16,9 @@ public class Task7 {
         driver.get("https://worldweather.wmo.int/en/home.html");
         Thread.sleep(5000);
         //search for your city in the search field - Lagos, Nigeria
-        WebElement searchField = driver.findElement(By.id("q_search"));
-        searchField.sendKeys("Lagos, Nigeria");
+        driver.findElement(By.id("q_search")).sendKeys("Lagos, Nigeria");
         Thread.sleep(5000);
-        searchField.submit();
-        Thread.sleep(5000);
+        driver.findElement(By.name("submit")).click();
         //print the days and weather description for each of the days shown in a readable and understandable manner.
         String weatherElement = driver.findElement(By.cssSelector("div.wrapper:nth-child(1) div.row:nth-child(7) div.col-7.city_right_side div.col-12.city_fc_block:nth-child(2) > div.city_fc_block_mask")).getText();
         System.out.println("---Days and Weather Description---"  );
