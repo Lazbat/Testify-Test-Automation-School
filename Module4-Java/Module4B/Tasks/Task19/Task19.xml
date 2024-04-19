@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" >
+    <test name="HomePage Test" >
+        <classes>
+
+            <class name="org.example.Task17.HomePage" />
+
+            <class name="org.example.Task18.HomePage" />
+
+        </classes>
+    </test>
+</suite>
