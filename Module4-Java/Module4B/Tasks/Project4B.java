@@ -1,12 +1,12 @@
 package org.example;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -39,80 +39,72 @@ public class Project4B {
         //6.Go to the 'cart' section and proceed to checkout
         //7.Fill the checkout information and complete your order
 
-        Project4BPage project = new Project4BPage(driver);
-
         //navigate to the url
         driver.get("https://www.automationexercise.com/");
         //sign up as a new user by creating an account
-        project.getSignUp().click();
-        project.getName().sendKeys("Lazbat");
-        project.getEmailAddress().sendKeys("jawe@mailinator.com");
-        project.getSignUpButton().click();
-
+        driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]")).click();
+        driver.findElement(By.xpath("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[2]")).sendKeys("Lazbat");
+        driver.findElement(By.xpath("//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]")).sendKeys("tawe@mailinator.com");
+        driver.findElement(By.xpath("//button[contains(text(),'Signup')]")).click();
         //fill/select all the options on the 'Enter Account Information' page.
-        project.getTitle().click();
-        project.getPassword().sendKeys("Lazbat123.");
-        WebElement selectDay = project.getDay();
+        driver.findElement(By.xpath("//body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[2]/label[1]/div[1]/span[1]/input[1]")).click();
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Lazbat123.");
+        WebElement selectDay = driver.findElement(By.xpath("//select[@id='days']"));
         Select day = new Select(selectDay);
         day.selectByVisibleText("14");
-        WebElement selectMonth = project.getMonth();
+        WebElement selectMonth = driver.findElement(By.xpath("//select[@id='months']"));
         Select month = new Select(selectMonth);
         month.selectByVisibleText("July");
-        WebElement selectYear = project.getYear();
+        WebElement selectYear = driver.findElement(By.xpath("//select[@id='years']"));
         Select year = new Select(selectYear);
         year.selectByVisibleText("1989");
-        project.getNewsLetter().click();
-        project.getReceiveSpecialOffers().click();
-        project.getFirstName().sendKeys("Lazbat");
-        project.getLastName().sendKeys("Babayale");
-        project.getCompany().sendKeys("Testify Limited");
-        project.getAddress().sendKeys("14, boulevard road");
-        project.getAddressTwo().sendKeys("14, boulevard road");
-        WebElement selectCountry = project.getCountry();
+        driver.findElement(By.xpath("//input[@id='newsletter']")).click();
+        driver.findElement(By.xpath("//input[@id='optin']")).click();
+        driver.findElement(By.xpath("//input[@id='first_name']")).sendKeys("Lazbat");
+        driver.findElement(By.xpath("//input[@id='last_name']")).sendKeys("Babayale");
+        driver.findElement(By.xpath("//input[@id='company']")).sendKeys("Testify Limited");
+        driver.findElement(By.xpath("//body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/p[4]/input[1]")).sendKeys("14, boulevard road");
+        driver.findElement(By.xpath("//body[1]/section[1]/div[1]/div[1]/div[1]/div[1]/form[1]/p[5]/input[1]")).sendKeys("14, boulevard road");
+        WebElement selectCountry = driver.findElement(By.xpath("//select[@id='country']"));
         Select country = new Select(selectCountry);
         country.selectByVisibleText("United States");
-        project.getState().sendKeys("Georgia");
-        project.getCity().sendKeys("Atlanta");
-        project.getZipCode().sendKeys("30033");
-        project.getMobileNumber().sendKeys("+14708099356");
-        project.getCreateAccountButton().click();
+        driver.findElement(By.xpath("//input[@id='state']")).sendKeys("Georgia");
+        driver.findElement(By.xpath("//input[@id='city']")).sendKeys("Atlanta");
+        driver.findElement(By.xpath("//input[@id='zipcode']")).sendKeys("30033");
+        driver.findElement(By.xpath("//input[@id='mobile_number']")).sendKeys("+14708099356");
+        driver.findElement(By.xpath("//button[contains(text(),'Create Account')]")).click();
         System.out.println("Sign up successful");
-
         //assert that your account was successfully created and then continue
-        WebElement accountCreatedMessage = project.getAccountCreatedSuccessful();
+        WebElement accountCreatedMessage = driver.findElement(By.xpath("//p[contains(text(),'Congratulations! Your new account has been success')]"));
         String accountCreated = accountCreatedMessage.getText();
         Assert.assertEquals(accountCreated, "Congratulations! Your new account has been successfully created!");
         System.out.println("Account created message printed successfully");
-        project.getContinueButton().click();
-
+        driver.findElement(By.xpath("//a[contains(text(),'Continue')]")).click();
         //go to the products section of the site and purchase any top of your choice from under the women's section
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,500)");
-        project.getWomenCategory().click();
-        //project.getTops().click();
-        project.getViewProduct().click();
-
+        driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/a[1]")).click();
+        //driver.findElement(By.xpath("//button[@id='button-review']")).click();
+        driver.findElement(By.xpath("//body/section[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/a[1]")).click();
         //add the top to the cart and assert that the item has been successfully added to the cart
-        project.getAddToCart().click();
-        project.getContinueShopping();
-        project.getContinueShoppingButton().click();
-        project.getCartButton().click();
-        WebElement cartItem = project.getCartItemName();
+        driver.findElement(By.xpath("//body/section[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/span[1]/button[1]")).click();
+        driver.findElement(By.xpath("//body/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]"));
+        driver.findElement(By.xpath("//button[contains(text(),'Continue Shopping')]")).click();
+        driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/a[1]")).click();
+        WebElement cartItem = driver.findElement(By.xpath("//body[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/h4[1]"));
         String cart = cartItem.getText();
         Assert.assertEquals(cart, "Blue Top");
         System.out.println("Item successfully added to cart");
-
         //proceed to checkout
-        project.getProceedToCheckoutButton().click();
-
+        driver.findElement(By.xpath("//a[contains(text(),'Proceed To Checkout')]")).click();
         //fill the checkout information and complete your order
-        project.getPlaceOrderButton().click();
-        project.getCardName().sendKeys("Lazbat Babayale");
-        project.getCardNumber().sendKeys("4960092293808330");
-        project.getCvcNumber().sendKeys("152");
-        project.getCardExpirationMonth().sendKeys("09");
-        project.getCardExpirationYear().sendKeys("2024");
-        project.getPayAndConfirmOrderButton().click();
+        driver.findElement(By.xpath("//a[contains(text(),'Place Order')]")).click();
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[1]/div[1]/input[1]")).sendKeys("Lazbat Babayale");
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[2]/div[1]/input[1]")).sendKeys("4960092293808330");
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[3]/div[1]/input[1]")).sendKeys("152");
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[3]/div[2]/input[1]")).sendKeys("09");
+        driver.findElement(By.xpath("//body/section[@id='cart_items']/div[1]/div[3]/div[1]/div[2]/form[1]/div[3]/div[3]/input[1]")).sendKeys("2024");
+        driver.findElement(By.xpath("//button[@id='submit']")).click();
         System.out.println("Congratulations! Your order has been confirmed!");
     }
 
@@ -126,50 +118,49 @@ public class Project4B {
         //6.Fill all other fields with valid inputs
         //7.Tick the ‘RememberMe’ checkbox and Purchase flight
 
-        Project4BPage project = new Project4BPage(driver);
-
         //navigate to the url
         driver.get("https://blazedemo.com/");
 
         //select departure destination
-        WebElement selectDepartureDestination = project.getDepartureCity();
+        WebElement selectDepartureDestination = driver.findElement(By.xpath("//body/div[3]/form[1]/select[1]"));
         Select departureDestination = new Select(selectDepartureDestination);
         departureDestination.selectByVisibleText("Boston");
         //select arrival destination
-        WebElement selectArrivalDestination = project.getDestinationCity();
+        WebElement selectArrivalDestination = driver.findElement(By.xpath("//body/div[3]/form[1]/select[2]"));
         Select arrivalDestination = new Select(selectArrivalDestination);
         arrivalDestination.selectByVisibleText("Rome");
-        project.getFindFlightsButton().click();
-        project.getChooseThisFlightButton().click();
-
+        //click on find flights
+        driver.findElement(By.xpath("//body/div[3]/form[1]/div[1]/input[1]")).click();
+        //select a flight
+        driver.findElement(By.xpath("//tbody/tr[1]/td[1]/input[1]")).click();
         //copy the flight number and paste into the Zip code field
-        project.getFlightNumber();
+        WebElement flightNumber = driver.findElement(By.xpath("//p[contains(text(),'Flight Number: UA954')]"));
+        String flight = flightNumber.getText();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,500)");
-        project.getZipCodeField().sendKeys("UA954");
-
+        WebElement zipCodeField = driver.findElement(By.xpath("//input[@id='zipCode']"));
+        zipCodeField.sendKeys(flight);
         //fill other fields with valid input
-        project.getFullName().sendKeys("Lazbat Babayale");
-        project.getFullAddress().sendKeys("124 Apena street");
-        project.getMyCity().sendKeys("Surulere");
-        project.getMyState().sendKeys("Lagos");
-        WebElement selectCardType = project.getCardType();
+        driver.findElement(By.xpath("//input[@id='inputName']")).sendKeys("Lazbat Babayale");
+        driver.findElement(By.xpath("//input[@id='address']")).sendKeys("124 Apena street");
+        driver.findElement(By.xpath("//input[@id='city']")).sendKeys("Surulere");
+        driver.findElement(By.xpath("//input[@id='state']")).sendKeys("Lagos");
+        WebElement selectCardType = driver.findElement(By.xpath("//select[@id='cardType']"));
         Select cardType = new Select(selectCardType);
         cardType.selectByVisibleText("Visa");
-        project.getCreditCardNumber().sendKeys("4960092293808330");
-        project.getCreditCardMonth().sendKeys("07");
-        project.getCreditCardYear().sendKeys("2024");
-        project.getNameOnCard().sendKeys("Lazbat Babayale");
-
+        driver.findElement(By.xpath("//input[@id='creditCardNumber']")).sendKeys("4960092293808330");
+        driver.findElement(By.xpath("//input[@id='creditCardMonth']")).sendKeys("07");
+        driver.findElement(By.xpath("//input[@id='creditCardYear']")).sendKeys("2024");
+        driver.findElement(By.xpath("//input[@id='nameOnCard']")).sendKeys("Lazbat Babayale");
         //tick remember me checkbox and purchase flight
-        project.getRememberMe().click();
-        project.getPurchaseFlight().click();
+        driver.findElement(By.xpath("//input[@id='rememberMe']")).click();
+        driver.findElement(By.xpath("//body/div[2]/form[1]/div[11]/div[1]/input[1]")).click();
         System.out.println("Flight purchase successful");
     }
-    @AfterMethod
-    public void quitBrowser() {
-        driver.quit();
-        System.out.println("Quit Browser");
-    }
 
+    //@AfterMethod
+    //public void quitBrowser() {
+        //driver.quit();
+       // System.out.println("Quit Browser");
+    //}
 }
