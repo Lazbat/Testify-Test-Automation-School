@@ -6,12 +6,10 @@
 
 # Create a class called Human
 class Human:
-    leg_count = 4
-    can_walk = True
+    leg_count = 4  # Add an attribute leg_count with the value of 4
+    can_walk = True  # Add another attribute can_walk with value of True
 
     def __init__(self, name):
-        self.leg_count = 4  # Add an attribute leg_count with the value of 4
-        self.can_walk = True  # Add another attribute can_walk with value of True
         self.name = name
 
 
